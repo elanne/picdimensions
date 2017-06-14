@@ -25,7 +25,7 @@ def check_and_process_arguments():
 	if args.file:
 		is_imagefile, width, height = is_image(args.file)
 		
-		if is_imagefile = False:
+		if is_imagefile == False:
 			print "File is not an image file!"
 			sys.exit(2)
 
@@ -111,7 +111,7 @@ def calculate_short_edge(edge_length, factor=None):
 		% (short_edge, edge_length, short_edge)
 
 def calculate_long_edge(edge_length, factor=None):
-	dimensions = [(50,70), (30,40), (10,15), (10,13)]
+	dimensions = [(50,70), (30,40), (15,20), (10,15), (10,13)]
 	for x,y in dimensions:
 		long_edge = int(y*edge_length/x)
 		print "%sx%s cm image: long edge is %s px. New dimensions are %sx%s px." \
