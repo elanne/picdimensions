@@ -100,7 +100,7 @@ def calculate_factor(img_width, img_height):
 
 
 def calculate_short_edge(edge_length, factor=None):
-	dimensions = [(50,70), (30,40), (10,15), (10,13)]
+	dimensions = [(50,70), (30,40), (15,20), (10,15), (10,13)]
 	for x,y in dimensions:
 		short_edge = int(x*edge_length/y)
 		print "%sx%s cm image: short edge is %s px. New dimensions are %sx%s px." \
